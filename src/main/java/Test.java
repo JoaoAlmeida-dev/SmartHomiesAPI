@@ -48,7 +48,7 @@ public class Test {
 		builder.setParameter("aggregateHours", "24")
 				.setParameter("contentType", "csv")
 				.setParameter("unitGroup", "metric")
-				.setParameter("key", "RNHEMXJBSKWV8LTLZNUUKGTRV")
+				.setParameter("key", "token")
 				.setParameter("locations", "Belém,PT");
 		HttpGet get = new HttpGet(builder.build());
 		CloseableHttpClient httpclient = HttpClients.createDefault();
@@ -60,7 +60,7 @@ public class Test {
 		//URIBuilder builder = new URIBuilder("https://api.openweathermap.org");
 		URIBuilder builder = new URIBuilder("https://api.openweathermap.org/data/2.5/onecall");
 
-		builder.setParameter("appid", "3bd4bc1d0953ac6f516800c167b02ecf")
+		builder.setParameter("appid", "token")
 				.setParameter("lat", "38.704620")
 				.setParameter("lon", "-9.202358")
 				.setParameter("units", "metric")
